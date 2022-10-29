@@ -1,38 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;800&display=swap");
 .App {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.share {
+  width: 100%;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.share svg {
+  border: 1px dashed #d0d5dd;
+  font-size: 30px;
+  /* width: 30px;
+  height: 30px; */
+  color: #d0d5dd;
+  transform: rotateY(180deg);
+  margin-left: 50%;
+  border-radius: 50%;
+  padding: 0.1em;
+  cursor: pointer;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.profile-section {
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  flex-wrap: wrap;
+}
+#profile__img {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+}
+#twitter {
+  width: 100%;
+  color: #101828;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #101828;
+
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+}
+#twitter a {
+  color: inherit;
+  text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
+.link-section {
+  width: 100%;
+}
+.link {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 32px;
+  margin: 20px 0;
+  width: 100%;
+  height: 76px;
+  background: #eaecf0;
+  border: 1px solid #eaecf0;
+  border-radius: 8px;
+  flex-wrap: wrap;
+}
+.link a {
+  text-decoration: none;
+  width: 100%;
+  color: #101828;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+}
+sub {
+  color: #667085;
+  font-family: sans-serif;
+}
+.social-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 24px 0;
+  background: #ffffffff;
+  height: 72px;
+  align-items: center;
+  gap: 1em;
+  font-size: 24px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.social-section svg:nth-child(1) {
+  color: #36c5f0;
+}
+
+footer {
+  display: flex;
+  text-align: left;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: white;
+  width: 100%;
+  align-items: center;
+  border: 1px solid #f4f5f7;
+  padding: 24px 0;
+}
+footer div {
+  margin: 10px 10px;
+}
+#zuri_internship img {
+  width: 180px;
+}
+.footer-text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #667085;
+}
+.i4g img {
+  width: 132px;
 }
