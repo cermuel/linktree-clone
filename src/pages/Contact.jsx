@@ -49,7 +49,7 @@ const Contact = () => {
             You agree to providing your data to {name} who may contact you.
           </div>
         </div>
-        <button type="submit" id="btn__submit">
+        <button type="submit" id="btn_submit">
           Send message
         </button>
       </form>
