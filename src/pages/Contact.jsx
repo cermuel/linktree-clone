@@ -4,7 +4,9 @@ import zuri from "../Images/zuri.png";
 import i4g from "../Images/i4g.png";
 const Contact = () => {
   const name = "CERMUEL";
-  const submitForm = () => {};
+  const submitForm = () => {
+    alert("Form Successfully Submitted");
+  };
   return (
     <>
       <div className="contact">
@@ -12,13 +14,14 @@ const Contact = () => {
         <div className="supporting-text">
           Hi there, contact me to ask me about anything you have in mind.
         </div>
-        <form>
+        <form onSubmit={submitForm}>
           <div className="firstname">
             <label htmlFor="first_name">First name</label>
             <input
               type="text"
               id="first_name"
               placeholder="Enter your first name"
+              required
             />{" "}
           </div>
           <div className="lastname">
@@ -53,7 +56,7 @@ const Contact = () => {
               You agree to providing your data to {name} who may contact you.
             </div>
           </div>
-          <button type="submit" id="btn_submit" onClick={submitForm}>
+          <button type="submit" id="btn_submit">
             Send message
           </button>
         </form>{" "}
